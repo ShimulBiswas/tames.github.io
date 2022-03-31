@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--------header--------->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Works.html">Works</a>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-bx">
+            <h1>Always choose us in Murshidabad</h1>
+            <p>We are a web development company that you can trust . We always respect our Customer and do the work in 2-3 days . If we do not do the work in 2-3 days you will get 50% discount</p>
+            <a href="About.html" class="learn-btn">Learn more</a>
+        </div>
+    </section>
+    <!--x------header-------x-->
+    <!-- ------works-------- -->
+    <section class="l-blog">
+        <h1>Works</h1>
+        <p>The projects we have done</p>
+        <div class="row">
+            <div class="blog-col">
+                <img src="./img/portfolio-1.jpg" height="200px" width="300px">
+                <h3>Artificial intellegence</h3>
+            </div>
+            <div class="blog-col">
+                <img src="./img/portfolio-2.jpg" height="200px" width="300px">
+                <h3>Social media website</h3>
+            </div>
+            <div class="blog-col">
+                <img src="./img/portfolio-3.jpg" height="200px" width="300px">
+                <h3>Search engine</h3>
+            </div>
+        </div>
+    </section>
+    <!-- ------x------works--------x------ -->
+    <section class="testimonials">
+        <h1>What our clients says about us</h1>
+        <div class="row">
+        <div class="testimonials-col">
+            <img src="./img/user-1.jpg">
+            <div>
+                <p>It is a very good company in Murshidabad </p>
+                <h3>Wriddhi</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="./img/user-2.jpg">
+            <div>
+                <p>Nice facilties</p>
+                <h3>Mukul biswas</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <!---------contact section----------->
+    <section class="cta">
+        <h1>Contact us to bulid your website</h1>
+        <a href="Contact.html" class="learn-btn">CONTACT US</a>
+    </section>
+    <!-----x----contact section---------x-->
+    <!-- footer -->
+    <section class="footer">
+        <p>copyright°2022 by shimul</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-bolt"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Shimul</p>
+    </section>
+    <!--x-footer-x-->
+
+    <!---------javascript for toggle menu----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--------header--------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Works.html">Works</a>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About us</h1>
+        
+    </section>
+    <!--x------header------->
+    <!-- about -->
+    <section class="about">
+        <div class="row">
+            <div class="about-col">
+              <h1>Always choose us in Murshidabad</h1>
+              <p>We are a web development company that you can trust . We always respect our Customer and do the work in 2-3 days . If we do not do the work in 2-3 days you will get 50% discount.We are master at html,css,javascript,python and java.We have 4 clients 2 of them are professional and 2 of them are amauter <br><br>Our customers get exactly what they want by communicating with web developers directly and controlling the project as if they were in the same room with the team.</p>
+
+            </div>
+            <div class="about-col">
+                <img src="./img/about-img.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="l-blog">
+        <div class="row">
+            <div class="blog-col">
+                <h3  class="green">55+</h3>
+                <p>website</p>
+            </div>
+            <div class="blog-col">
+                <h3 class="green">39+</h3>
+                <p>games</p>
+            </div>
+            <div class="blog-col">
+                <h3 class="green">13+</h3>
+                <p>apps</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>copyright°2022 by shimul</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-bolt"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Shimul</p>
+    </section>
+    <!--x-footer-x-->
+
+    <!---------javascript for toggle menu----------->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        
+        function showMenu(){
+            navLinks.style.right= '0';
+        }
+        function hideMenu(){
+            navLinks.style.right= '-200px';
+        }
+    </script>
+</body>
+</html>

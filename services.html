@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAMES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,900;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--------header--------->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Works.html">Works</a>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Services</h1>
+        
+    </section>
+    <section class="l-blog">
+        <h1>Services</h1>
+        <div class="row">
+            <div class="blog-col">
+                <img src="./img/services-1.jpg" height="200px" width="300px">
+                <h3>Web development and design</h3>
+                <p>We create website for you.We can create ecommerce,blog,business or portfolio website</p>
+            </div>
+            <div class="blog-col">
+                <img src="./img/services-2.jpg" height="200px" width="300px">
+                <h3>Game development</h3>
+                <p>We create 2d games in python or html and 3d games in struckd - 3d game creator.</p>
+            </div>
+            <div class="blog-col">
+                <img src="./img/services-3.jpg" height="200px" width="300px">
+                <h3>Android and ios development</h3>
+                <p>We create Android and ios apps for you</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>copyright°2022 by shimul</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-bolt"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Shimul</p>
+    </section>
+    <!--x-footer-x-->
+
+    <!---------javascript for toggle menu----------->
+    <script>
+        var navLinks = document.getElementById('navLinks');
+        
+        function showMenu(){
+            navLinks.style.right= '0';
+        }
+        function hideMenu(){
+            navLinks.style.right= '-200px';
+        }
+    </script>
+</body>
+</html>
